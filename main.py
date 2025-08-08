@@ -106,7 +106,7 @@ def view_inventory():
     print("INVENTORY : \n")
     for pid,info in inventory.items():
         print(f"ID : {pid} | Name : {info['Name']} | Price : {info['Price']} | Stock : {info['Stock']}")
-    save_inventory_to_google_sheet()
+    
 
 def take_order():
     product_id = int(input("Enter product ID : "))
@@ -137,7 +137,7 @@ def view_orders():
     print("Order History : \n")
     for i,order in enumerate(orders,start=1):
         print(f"Index : {i} | Product ID : {order['Product ID']} | Product Name : {order['Product Name']} | Qty : {order['Quantity']} | Total Price : {order['Total Price']}")
-    save_inventory_to_google_sheet()
+    
  
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
