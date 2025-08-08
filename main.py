@@ -148,7 +148,7 @@ def clear_screen():
 def main():
     load_inventory_from_google_sheet()
     while True:
-        print("=========== Inventory & Order Management System ============ \n")
+        print("=========== Inventory & Order Management System =========== \n")
         print("1. Add Product")
         print("2. update Product")
         print("3. Delete Product")
