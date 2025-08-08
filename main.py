@@ -32,6 +32,7 @@ def save_inventory_to_google_sheet():
         sheet.append_row(row)
     print("Inventory saved to Google Sheet.")
 
+
 def load_inventory_from_google_sheet():
     if not sheet:
         print("Google Sheet not connected!")
